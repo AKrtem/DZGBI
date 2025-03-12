@@ -1,0 +1,59 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер для центрирования */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #b2d3ad;
+  max-width: 1600px;
+  color: white;
+  padding: 5px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  font-size: 10px; /* Размер шрифта */
+  font-weight: bold; /* Жирный текст */
+  color: #000000;
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d7d7e0;
+  border-radius: 8px;
+  padding: 5px;
+  width: 320px;
+}
+
+.header__search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.header__search button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
