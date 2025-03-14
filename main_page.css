@@ -7,15 +7,29 @@ body {
 
 /* Контейнер для центрирования */
 .container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
+}
+
+.top-bar {
+  background: #f8f8f8;
+  max-width: 1920px;
+  color: #333;
+  font-size: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar__info {
+  display: flex;
+  gap: 20px;
 }
 
 /* Шапка сайта */
 .header {
   background-color: #b2d3ad;
-  max-width: 1600px;
+  max-width: 1920px;
   color: white;
   padding: 5px 0;
 }
@@ -56,4 +70,71 @@ body {
   padding: 5px;
   display: flex;
   align-items: center;
+}
+
+/* Стили для меню */
+.header__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; */
+   gap: 20px;
+}
+
+.header__nav li {
+  position: relative;
+  padding: 10px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+}
+
+/* Скрытое подменю */
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 600px;
+  padding: 5px 0;
+
+  display: grid; /* Включаем grid */
+  grid-template-columns: repeat(4, 1fr); /* Делим на 4 равные колонки */
+  gap: 5px; /* Расстояние между элементами */
+  min-width: 400px;
+
+  list-style: none; /* Убираем маркеры */
+  padding: 0; /* Убираем отступы */
+}
+
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+.dropdown-menu a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  /* display: block; */
+}
+
+/* Показываем подменю при наведении */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Подсветка при наведении на элемент */
 }
