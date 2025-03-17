@@ -2,21 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ООО ДЗЖБИ</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans m-0 p-0">
-    <!-- Верхняя панель
-    <div
-      class="bg-gray-100 max-w-[1920px] text-gray-800 text-xs p-1 border-b border-gray-300"
-    >
-      <div class="container mx-auto px-1 flex gap-5">
-        <span>г. Дзержинский</span>
-        <span></span>
-      </div>
-    </div> -->
-
     <!-- Шапка -->
     <header class="bg-green-300 max-w-[1920px] text-white p-1">
       <div class="container mx-auto flex justify-between items-center">
@@ -44,77 +35,8 @@
       </div>
     </header>
 
-    <!-- Навигация -->
-    <!-- <nav class="container mx-auto">
-      <ul class="flex gap-5 p-0 m-0 list-none">
-        <li class="relative p-2">
-          <a href="#" class="no-underline text-black text-base p-2 block"
-            >Главная</a
-          >
-        </li>
-        <li class="relative p-2 dropdown">
-          <a href="#" class="no-underline text-black text-base p-2 block"
-            >Продукция</a
-          >
-          <ul
-            class="absolute top-full left-0 bg-white shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 ease-in-out grid grid-cols-4 gap-2 p-1 min-w-max dropdown-menu"
-          >
-            <li class="p-2 hover:bg-gray-200 relative group">
-              <a href="#" class="text-black text-sm bold">Категория 1</a>
-              <a href="#" class="text-black text-sm">Плита дорожная</a>
-              <a href="#" class="text-black text-sm">Плита кухонная</a>
-              <a href="#" class="text-black text-sm">Плита мироздания</a>
-              <ul
-                class="submenu absolute left-0 top-full bg-white shadow-md rounded-lg opacity-0 invisible transition-all duration-300 transform translate-y-5 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 max-h-[500px] overflow-hidden"
-              >
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 1</a>
-                </li>
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 2</a>
-                </li>
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 3</a>
-                </li>
-              </ul>
-            </li>
-
-            <!-- Категория 2
-            <li class="p-2 hover:bg-gray-200 relative group">
-              <a href="#" class="text-black text-sm">Категория 2</a>
-              <ul
-                class="submenu absolute left-0 top-full bg-white shadow-md rounded-lg opacity-0 invisible transition-all duration-300 transform translate-y-5 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 max-h-[500px] overflow-hidden"
-              >
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 1</a>
-                </li>
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 2</a>
-                </li>
-                <li class="p-2 hover:bg-gray-100">
-                  <a href="#" class="text-black text-sm">Позиция 3</a>
-                </li>
-              </ul>
-            </li> 
-            <li class="p-2 hover:bg-gray-200">
-              <a href="#" class="text-black text-sm">Категория 3</a>
-            </li>
-
-            <li class="p-2 hover:bg-gray-200">
-              <a href="#" class="text-black text-sm">Категория 4</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="relative p-2">
-          <a href="#" class="no-underline text-black text-base p-2 block"
-            >Контакты</a
-          >
-        </li>
-      </ul>
-    </nav> -->
     <nav class="container mx-auto">
-      <ul class="flex gap-5 p-0 m-0 list-none">
+      <ul class="flex gap-3 p-0 m-0 list-none">
         <li class="relative p-2">
           <a href="#" class="no-underline text-black text-base p-2 block"
             >Главная</a
@@ -131,26 +53,34 @@
           <div
             class="absolute left-0 top-full bg-white shadow-lg rounded-md opacity-0 invisible transition-all duration-300 group-hover:opacity-100 group-hover:visible p-4 w-max"
           >
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-6 gap-x-5 gap-y-4">
               <!-- Категория 1 -->
               <div>
-                <p class="font-bold mb-2">Категория 1</p>
+                <p class="font-bold mb-2 text-sm font-sans">
+                  Строительные ограждения
+                </p>
                 <ul>
-                  <li class="p-1 hover:bg-gray-100">
-                    <a href="#" class="text-sm">Позиция 1</a>
+                  <li class="p-0.25rem hover:bg-gray-100">
+                    <a href="#" class="text-xs">Позиция 1</a>
                   </li>
-                  <li class="p-1 hover:bg-gray-100">
-                    <a href="#" class="text-sm">Позиция 2</a>
+                  <li class="p-0.25rem hover:bg-gray-100">
+                    <a href="#" class="text-xs">Позиция 1</a>
                   </li>
-                  <li class="p-1 hover:bg-gray-100">
-                    <a href="#" class="text-sm">Позиция 3</a>
+                  <li class="p-0.25rem hover:bg-gray-100">
+                    <a href="#" class="text-xs">Позиция 1</a>
+                  </li>
+                  <li class="p-0.25rem hover:bg-gray-100">
+                    <a href="#" class="text-xs">Позиция 2</a>
+                  </li>
+                  <li class="p-0.25rem hover:bg-gray-100">
+                    <a href="#" class="text-xs">Позиция 3</a>
                   </li>
                 </ul>
               </div>
 
               <!-- Категория 2 -->
               <div>
-                <p class="font-bold mb-2">Категория 2</p>
+                <p class="font-bold mb-2">Пирожки с укропом</p>
                 <ul>
                   <li class="p-1 hover:bg-gray-100">
                     <a href="#" class="text-sm">Позиция 1</a>
@@ -184,6 +114,27 @@
               <div>
                 <p class="font-bold mb-2">Категория 4</p>
                 <ul>
+                  <li class="p-1 hover:bg-gray-100">
+                    <a href="#" class="text-sm">Позиция 1</a>
+                  </li>
+                  <li class="p-1 hover:bg-gray-100">
+                    <a href="#" class="text-sm">Позиция 2</a>
+                  </li>
+                  <li class="p-1 hover:bg-gray-100">
+                    <a href="#" class="text-sm">Позиция 3</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-bold mb-2">Категория 1</p>
+                <ul>
+                  <li class="p-1 hover:bg-gray-100">
+                    <a href="#" class="text-sm">Позиция 1</a>
+                  </li>
+                  <li class="p-1 hover:bg-gray-100">
+                    <a href="#" class="text-sm">Позиция 1</a>
+                  </li>
                   <li class="p-1 hover:bg-gray-100">
                     <a href="#" class="text-sm">Позиция 1</a>
                   </li>
